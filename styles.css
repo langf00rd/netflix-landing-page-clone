@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #e50914;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 63px;
+}
+
+input,
+button {
+  border: none;
+}
+
+button {
+  color: #fff;
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: pointer;
+  background: var(--primary);
+}
+
+button img {
+  position: relative;
+  top: 3px;
+  right: -10px;
+}
+
+button:hover {
+  background: red;
+}
+
+.sign-in-btn {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 7px 17px;
+}
+
+header img {
+  width: 170px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.hero {
+  height: 100vh;
+  background: radial-gradient(#00000063, #000000e3),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/b135a6ac-08f0-4e97-a0b1-7c63e400541f/GH-en-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+}
+
+.hero-content {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-content div {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero h2,
+.hero p {
+  margin: 20px 0;
+}
+
+.input-container input {
+  border: 2px solid #fff;
+  margin-right: -4px;
+  outline: none;
+  padding: 20px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.input-container input:focus {
+  border-color: #2b96ff;
+}
+
+.input-container button {
+  font-size: 1.5rem;
+  padding: 14px 39px;
+  position: relative;
+  top: 5px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 33px;
+  }
+
+  .hero p,
+  .hero h2 {
+    font-size: 1.125rem;
+  }
+
+  .input-container input,
+  .input-container button {
+    font-size: 0.9rem;
+  }
+
+  .input-container input {
+    width: 75%;
+    margin: 10px 0;
+    padding: 7px 12px;
+  }
+
+  .input-container button {
+    border-radius: 5px;
+    padding: 7px 17px;
+    top: 0;
+  }
+}
