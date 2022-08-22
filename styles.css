@@ -172,7 +172,7 @@ body .reverse-section {
 
 /* FAQ */
 .faq {
-  padding: 100px 0;
+  padding: 100px 30px;
 }
 
 .faq-wrapper {
@@ -235,15 +235,68 @@ body .reverse-section {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1011px) {
+  .section-wrapper {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  .hero {
+    padding: 20px;
+    height: 74vh;
+  }
+
+  .form-container,
+  .form {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-container button {
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .hero h4 {
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+
+  .section-wrapper {
+    width: 80%;
+    padding: 60px 0;
+  }
+  .section-wrapper img {
+    width: 100%;
+  }
+
+  /* .section {padding: 60px 0;} */
+
+  .section p {
+    font-size: 18px;
+  }
+
+  /* .hero p,
+  .hero h2 {
+    font-size: 1.125rem;
+  } */
+
   /* .hero h1 {
     font-size: 1.75rem;
     line-height: 33px;
-  }
-
-  .hero p,
-  .hero h2 {
-    font-size: 1.125rem;
   }
 
   .form-container input,
