@@ -9,6 +9,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 body {
@@ -44,7 +45,6 @@ button {
 }
 
 button {
-  color: #fff;
   font-weight: 400;
   white-space: nowrap;
   cursor: pointer;
@@ -94,7 +94,6 @@ header img {
 .hero {
   height: 65vh;
   margin-top: -100px;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,21 +118,23 @@ header img {
   font-size: 1.15rem;
 }
 
-.input-container {
+.form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.input-container button {
+.form-container button {
   font-size: 1.5rem;
   padding: 14px 39px;
   position: relative;
   top: 5px;
 }
 
-.input-container input {
+.form-container input {
   border: 2px solid #fff;
   outline: none;
   width: 100%;
@@ -142,7 +143,7 @@ header img {
   top: 5px;
 }
 
-.input-container input:focus {
+.form-container input:focus {
   border-color: #2b96ff;
 }
 
@@ -151,7 +152,6 @@ header img {
 .section {
   border-top: 10px solid var(---grey);
   border-bottom: 10px solid var(---grey);
-  color: #fff;
 }
 
 body .reverse-section {
@@ -170,6 +170,67 @@ body .reverse-section {
   font-size: 27px;
 }
 
+/* FAQ */
+.faq {
+  padding: 100px 0;
+}
+
+.faq-wrapper {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq-title {
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  background: #303030;
+  position: relative;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.faq-title:after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: -1rem;
+  font-weight: bold;
+}
+
+.faq-item:nth-of-type(2n) .faq-title {
+  /* background: #ddd; */
+  background: #303030;
+}
+
+.faq-item__content {
+  display: none;
+  padding: 20px;
+  background: #303030;
+  margin: 3px 0;
+}
+
+.faq-item__content:target {
+  display: block;
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.form .form-container {
+  margin-top: 20px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -185,18 +246,18 @@ body .reverse-section {
     font-size: 1.125rem;
   }
 
-  .input-container input,
-  .input-container button {
+  .form-container input,
+  .form-container button {
     font-size: 0.9rem;
   }
 
-  .input-container input {
+  .form-container input {
     width: 75%;
     margin: 10px 0;
     padding: 7px 12px;
   }
 
-  .input-container button {
+  .form-container button {
     border-radius: 5px;
     padding: 7px 17px;
     top: 0;
